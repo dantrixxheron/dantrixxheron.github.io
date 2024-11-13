@@ -1,7 +1,21 @@
 /* Palette color:
     Color Principal (#8E6E53)
     Color de Fondo Oscuro (#433E3F)
-    Color de Fondo Principal (#C0B7B1)
+    Color de Fondo Principal (#F1F2EE)
     Color de Resalte (#7A7265)
     Color de Texto (#856D59)
 */
+body {
+    background-color: #F1F2EE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #F0F4EF;
+    color: #C0B7B1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
