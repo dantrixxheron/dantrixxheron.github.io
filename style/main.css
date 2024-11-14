@@ -38,6 +38,10 @@ nav,
   background-color: #433e3f;
   color: #f1f2ee;
 }
+/* Estilo para el botón flotante */
+.btn-light.position-fixed {
+    z-index: 1050;
+  }
 /* Tema oscuro */
 body.dark-theme {
   background-color: #433e3f;
