@@ -6,16 +6,26 @@
     Color de Texto (#856D59)
 */
 body {
-    background-color: #F1F2EE;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  background-color: #f1f2ee;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 nav {
-    background-color: #F0F4EF;
-    color: #C0B7B1;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  
+}
+.hero-section {
+  height: 100vh;
+}
+.name-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+ text-size-adjust: 100%; 
 }
