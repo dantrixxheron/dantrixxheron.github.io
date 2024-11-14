@@ -17,6 +17,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  background-color: #f4f5f1;
 }
 nav,
 .navbar-brand,
@@ -40,8 +41,17 @@ nav,
 }
 /* Estilo para el botón flotante */
 .btn-light.position-fixed {
-    z-index: 1050;
-  }
+  z-index: 1050;
+}
+.custom {
+  background-color: #856d59;
+  color: #f1f2ee;
+}
+.list-group-item {
+  background-color: #856d59;
+  border: none;
+  color: #f1f2ee;
+}
 /* Tema oscuro */
 body.dark-theme {
   background-color: #433e3f;
