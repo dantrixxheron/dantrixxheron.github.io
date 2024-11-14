@@ -34,6 +34,10 @@ nav,
   text-align: center;
   text-size-adjust: 100%;
 }
+.btn-light {
+  background-color: #433e3f;
+  color: #f1f2ee;
+}
 /* Tema oscuro */
 body.dark-theme {
   background-color: #433e3f;
@@ -46,4 +50,12 @@ body.dark-theme nav {
 body.dark-theme .navbar-brand,
 body.dark-theme .nav-link {
   color: #f1f2ee !important;
+}
+body.dark-theme .btn-light {
+  background-color: #f1f2ee;
+  color: #433e3f;
+}
+body.dark-theme .btn-light:hover {
+  background-color: #433e3f;
+  color: #f1f2ee;
 }
