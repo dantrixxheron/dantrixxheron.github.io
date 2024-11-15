@@ -44,13 +44,13 @@ nav,
   z-index: 1050;
 }
 .custom {
-  background-color: #856d59;
-  color: #f1f2ee;
+  background-color: #f5f9f1;
+  color: #433e3f;
 }
 .list-group-item {
-  background-color: #856d59;
+  background-color: #f5f9f1;
   border: none;
-  color: #f1f2ee;
+  color: #434343;
 }
 /* Tema oscuro */
 body.dark-theme {
