@@ -18,6 +18,7 @@ nav {
   justify-content: space-between;
   padding: 1em;
   background-color: #f4f5f1;
+  font-family: "DM Mono", serif;
 }
 nav,
 .navbar-brand,
@@ -58,6 +59,24 @@ nav,
 .list-group-item{
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.text-change{
+  color: #433e3f;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.section-title{
+  font-family: "DM Mono", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+}
+.info{
+  font-size: 1.2em;
+}
+.icons{
+  font-size: 1.5em;
+  color: #434343;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 /* Tema oscuro */
 body.dark-theme {
   background-color: #433e3f;
@@ -86,5 +105,11 @@ body.dark-theme .custom {
 body.dark-theme .list-group-item {
   background-color: #332f30;
   border: none;
+  color: #f1f2ee;
+}
+body.dark-theme .section-title{
+  color: #f1f2ee;
+}
+body.dark-theme .icons{
   color: #f1f2ee;
 }
