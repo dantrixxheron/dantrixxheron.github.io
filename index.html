@@ -21,7 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode"
     />
     <script src="/scripts/main.js" defer></script>
-    <link rel="shortcut icon" href="/imgs/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/imgs/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style/cards.css" />
   </head>
 
   <body>
@@ -133,21 +134,108 @@
               <div class="card-body">
                 <h5 class="card-title">Teaching</h5>
                 <p class="card-text">
-                  Experiencia en mentorías y talleres, enfocados
-                  en la inclusión de mujeres jóvenes en el ámbito tecnológico y
-                  STEM.
+                  Experiencia en mentorías y talleres, enfocados en la inclusión
+                  de mujeres jóvenes en el ámbito tecnológico y STEM.
                 </p>
               </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Coaching</li>
-                  <li class="list-group-item">Lidership</li>
-                  <li class="list-group-item">Management</li>
-                </ul>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Coaching</li>
+                <li class="list-group-item">Lidership</li>
+                <li class="list-group-item">Management</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Sección: Proyectos -->
+    <section id="proyects" class="container mt-5 skills-section">
+      <div class="card-p">
+        <div class="row">
+          <!-- Título centrado en una fila completa -->
+          <div class="col-12 text-center mb-4">
+            <h2>Proyectos</h2>
+          </div>
+        </div>
+        <!-- Fila de Proyectos en formato grid con tarjetas de igual altura -->
+        <div class="row">
+          <!-- Tarjeta de Proyecto: Web Development -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card custom h-100" style="width: 100%">
+              <div class="image-container">
+                <img
+                  src="/imgs/previews/SGBD-Preview.png"
+                  class="card-img"
+                  alt="Vista previa SGBD"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gestor de Base de datos</h5>
+                <h6 class="card-subtitle mb-2">Web Development</h6>
+                <p class="card-text">
+                  Aplicación web en React para la gestión de bases de datos, con
+                  funcionalidades de CRUD y autenticación de usuarios.
+                </p>
+                <a
+                  href="https://github.com/dantrixxheron/proyecto-bd"
+                  class="btn btn-outline-dark"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta de Proyecto: Mobile Development -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card custom h-100" style="width: 100%">
+              <div class="image-container">
+                <img
+                  src="/imgs/previews/Preview PicturesCRUD.jpeg"
+                  class="card-img resize"
+                  alt="Vista previa CRUD Fotos con Localstorage"/>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CRUD Fotos con Localstorage</h5>
+                <h6 class="card-subtitle mb-2">Mobile Development</h6>
+                <p class="card-text">
+                  Aplicación móvil en Android Studio con Kotlin para la gestión de fotos, con funcionalidades
+                  de CRUD y almacenamiento local.
+                </p>
+                <a
+                  href="https://github.com/dantrixxheron/newTomarFoto"
+                  class="btn btn-outline-dark"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta de Proyecto: Mobile Development -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card custom h-100" style="width: 100%">
+              <div class="image-container">
+                <img
+                  src="/imgs/previews/GP-Preview.png"
+                  class="card-img resize"
+                  alt="Vista previa CRUD Fotos con Localstorage"/>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gestor de Gastos: "MeAhorro"</h5>
+                <h6 class="card-subtitle mb-2">Mobile Development</h6>
+                <p class="card-text">
+                  Aplicación móvil en Ionic para la gestión de gastos, ingresos, presupuestos, gráficas de gastos con almacenamiento local.
+                </p>
+                <a
+                  href="https://github.com/dantrixxheron/newTomarFoto"
+                  class="btn btn-outline-dark"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
