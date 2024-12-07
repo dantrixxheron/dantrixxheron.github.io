@@ -1,9 +1,6 @@
 /* Palette color:
-    Color Principal (#8E6E53)
     Color de Fondo Oscuro (#433E3F)
     Color de Fondo Principal (#F1F2EE)
-    Color de Resalte (#7A7265)
-    Color de Texto (#856D59)
 */
 body {
   background-color: #f1f2ee;
@@ -12,18 +9,6 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  background-color: #f4f5f1;
-  font-family: "DM Mono", serif;
-}
-nav,
-.navbar-brand,
-.nav-link {
-  transition: color 0.3s ease, background-color 0.3s ease;
 }
 .hero-section {
   height: 100vh;

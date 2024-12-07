@@ -1,0 +1,46 @@
+.header {
+  background-color: #f4f5f1; /* Igual que el nav */
+  padding: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: "DM Mono", serif;
+  position: relative; /* Asegura que no se "flote" sobre otros elementos */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  z-index: 2; /* Para que esté sobre el nav */
+}
+
+/* Estilos del Nav */
+nav {
+  font-family: "DM Mono", serif;
+  background-color: #f4f5f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  z-index: 1; /* Por encima del contenido */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+nav li {
+  transition: all 0.3s ease;
+}
+/* Bajar el tono de los demás elementos */
+nav ul:hover li:not(:hover) {
+  opacity: 0.5;
+}

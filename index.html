@@ -27,39 +27,30 @@
     <script src="/scripts/main.js" defer></script>
     <link rel="shortcut icon" href="/imgs/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/style/cards.css" />
-    <link rel="stylesheet" href="/style/scroll.css">
+    <link rel="stylesheet" href="/style/scroll.css" />
+    <link rel="stylesheet" href="/style/header.css" />
   </head>
 
   <body>
     <!-- Encabezado -->
+    <div id="home" class="header">
+      <h1>cm-daniela</h1>
+    </div>
+    <!-- Navegación -->
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Inicio</a></li>
+        <li><a href="#about-me" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact-info" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección inicio-->
     <div class="hero-section">
-      <nav class="navbar navbar-expand-lg bd-navbar sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">CM-Daniela</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#about-me">Sobre mí</a>
-              <a class="nav-link" href="#skills">Habilidades</a>
-              <a class="nav-link" href="#proyects">Proyectos</a>
-              <a class="nav-link" href="#contact-info">Contacto</a>
-            </div>
-          </div>
-        </div>
-      </nav>
       <div class="name-section">
-        <header class="header text-center">
+        <header class="text-center">
           <h1>Daniela Cruz Mejía</h1>
           <p>Ingeniera de Software</p>
         </header>
@@ -153,7 +144,7 @@
       </div>
     </section>
     <!-- Sección: Proyectos -->
-    <section id="proyects" class="container mt-5 skills-section">
+    <section id="projects" class="container mt-5 skills-section">
       <div class="card-p">
         <div class="row">
           <!-- Título centrado en una fila completa -->
@@ -258,9 +249,7 @@
               target="_blank"
               class="text-decoration-none mb-2 mx-3"
             >
-              <i
-                class="bi bi-linkedin icons"
-              ></i>
+              <i class="bi bi-linkedin icons"></i>
             </a>
             <a
               href="https://github.com/dantrixxheron"
@@ -274,18 +263,14 @@
               target="_blank"
               class="text-decoration-none mb-2 mx-3"
             >
-              <i
-                class="bi bi-envelope-fill icons"
-              ></i>
+              <i class="bi bi-envelope-fill icons"></i>
             </a>
             <a
               href="https://www.instagram.com/dantrixxheron"
               target="_blank"
               class="text-decoration-none mb-2 mx-3"
             >
-              <i
-                class="bi bi-instagram icons"
-              ></i>
+              <i class="bi bi-instagram icons"></i>
             </a>
           </div>
         </div>
