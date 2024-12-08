@@ -1,5 +1,4 @@
 .header {
-  background-color: #f4f5f1; /* Igual que el nav */
   padding: 1rem;
 }
 
@@ -23,6 +22,7 @@ nav {
   display: flex;
   justify-content: center;
   z-index: 1; /* Por encima del contenido */
+  transition: background-color 0.3s ease;
 }
 
 nav ul {
@@ -33,14 +33,13 @@ nav ul {
   gap: 32px;
 }
 
-nav a {
+nav a.nav-link {
   text-decoration: none;
   color: #333;
-}
-nav li {
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 /* Bajar el tono de los demás elementos */
 nav ul:hover li:not(:hover) {
   opacity: 0.5;
+  transition: opacity 0.3s ease; /* Transición específica */
 }
