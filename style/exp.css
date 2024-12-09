@@ -1,0 +1,93 @@
+.exp-dynamic-card{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.exp-bar{
+    background-color: #c5a9a0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.exp-main-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.exp-main-info .exp-title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #433e3f;
+}
+.exp-main-info .exp-date{
+    font-size: 1.2em;
+    color: #434343;
+}
+.exp-btn-show{
+    position: absolute;
+    right: 25px;
+    top: 5px;
+}
+.exp-btn-show button{
+    border: 1px solid #c5a9a0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #c5a9a0;
+    color: #433e3f;
+    transition: all 0.3s ease;
+}
+.exp-btn-show button:hover{
+    border: 1px solid #433e3f;
+}
+
+.dynamic-info {
+    max-height: 0; /* Oculta el contenido */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    opacity: 0; /* Inicia como transparente */
+    padding: 0 10px; /* Ajusta el padding al expandirse */
+    background-color: #ece2df;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.dynamic-info.show {
+    max-height: fit-content; /* Define la altura máxima expandida */
+    opacity: 1; /* Hace visible el contenido */
+    padding: 10px; /* Padding completo */
+    transition: all 0.3s ease;
+}
+
+.general-info{
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.location{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.location-text{
+    font-size: 1em;
+    color: #434343;
+}
+.ic-sm{
+    scale: 0.9;
+    color: #433e3f;
+}
+.website-link{
+    font-size: 1em;
+    color: #433e3f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.website-link:hover{
+    color: #a08b84;
+}

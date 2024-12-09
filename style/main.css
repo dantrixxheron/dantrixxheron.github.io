@@ -50,6 +50,9 @@ body {
   font-style: normal;
   font-weight: bold;
 }
+.center{
+  text-align: center;
+}
 .info{
   font-size: 1.2em;
 }
