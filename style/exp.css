@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 .exp-bar{
-    background-color: #c5a9a0;
+    background-color: #d3c5c5;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -25,7 +25,7 @@
 }
 .exp-main-info .exp-date{
     font-size: 1.2em;
-    color: #434343;
+    color: #433e3f;
 }
 .exp-btn-show{
     position: absolute;
@@ -33,10 +33,10 @@
     top: 5px;
 }
 .exp-btn-show button{
-    border: 1px solid #c5a9a0;
+    border: 1px solid #d3c5c5;
     border-radius: 20px;
     padding: 5px 10px;
-    background-color: #c5a9a0;
+    background-color: #d3c5c5;
     color: #433e3f;
     transition: all 0.3s ease;
 }
@@ -49,9 +49,10 @@
     overflow: hidden; /* Evita que el contenido sobresalga */
     opacity: 0; /* Inicia como transparente */
     padding: 0 10px; /* Ajusta el padding al expandirse */
-    background-color: #ece2df;
+    background-color: #f8f5f0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
     transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
@@ -76,7 +77,7 @@
 }
 .location-text{
     font-size: 1em;
-    color: #434343;
+    color: #433e3f;
 }
 .ic-sm{
     scale: 0.9;
@@ -101,8 +102,47 @@
 }
 .skill-ad{
     background-color: #a08b84;
-    color: #fff;
+    color: #f1f2ee;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.9em;
+}
+
+/* ------------------------------- Dark Theme ------------------------------- */
+.dark-theme .exp-bar{
+    background-color: #6a6264;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.206);
+    transition: all 0.3s ease;
+}
+.dark-theme .exp-title, 
+.dark-theme .exp-date {
+    color: #f1f2ee;
+    transition: all 0.3s ease;
+}
+.dark-theme .exp-btn-show button{
+    background-color: #6a6264;
+    color: #f1f2ee;
+    border: 1px solid #6a6264;
+    transition: all 0.3s ease;
+}
+.dark-theme .exp-btn-show button:hover{
+    border: 1px solid #f1f2ee;
+}
+.dark-theme .dynamic-info{
+    background-color: #50494b;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.119);
+}
+.dark-theme .location-text,
+.dark-theme .ic-sm,
+.dark-theme .website-link{
+    color: #f1f2ee;
+    transition: all 0.3s ease;
+}
+.dark-theme .website-link:hover{
+    color: #87756f;
+}
+.dark-theme .skill-ad{
+    background-color: #735f59;
+    color: #f1f2ee;
+    transition: all 0.3s ease;
 }
