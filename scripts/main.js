@@ -25,23 +25,29 @@ function changeTheme(array, elementPast, elementNew) {
 function changeIconExp(event) {
     // Obtener el botón que llamó la función
     const button = event.currentTarget;
-  
+
     // Encontrar el ícono <i> dentro del botón
     const icon = button.querySelector("i");
-  
+
     // Alternar clases del ícono
     if (icon.classList.contains("bi-plus-lg")) {
-      icon.classList.replace("bi-plus-lg", "bi-dash-lg");
+        icon.classList.replace("bi-plus-lg", "bi-dash-lg");
     } else {
-      icon.classList.replace("bi-dash-lg", "bi-plus-lg");
+        icon.classList.replace("bi-dash-lg", "bi-plus-lg");
     }
-  
+
     // Encontrar el contenedor padre más cercano (exp-dynamic-card)
     const card = button.closest(".exp-dynamic-card");
-  
+
     // Encontrar el div con la clase "dynamic-info" dentro del card
     const dynamicInfo = card.querySelector(".dynamic-info");
-  
+
     // Alternar la clase "show" para aplicar la transición
     dynamicInfo.classList.toggle("show");
-  }  
+}
+
+function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('open');
+  }
+  

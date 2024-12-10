@@ -7,7 +7,6 @@
   font-size: 1.7rem;
   font-family: "DM Mono", serif;
   position: relative; /* Asegura que no se "flote" sobre otros elementos */
-  width: fit-content; /* Ajusta el ancho al contenido */
   z-index: 2; /* Para que esté sobre el nav */
 }
 
@@ -42,4 +41,63 @@ nav a.nav-link {
 nav ul:hover li:not(:hover) {
   opacity: 0.5;
   transition: opacity 0.3s ease; /* Transición específica */
+}
+/* Botón de menú hamburguesa (para pantallas pequeñas) */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    z-index: 1; /* Para que esté sobre el nav */
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .dark-theme nav {
+    background-color: #333;
+  }
+  nav ul {
+    display: none; /* Oculta el menú inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f4f5f1;
+    gap: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  .dark-theme nav ul {
+    background-color: #333;
+    color: #f4f5f1;
+  }
+
+  nav ul.open {
+    display: flex; /* Muestra el menú cuando se activa */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón hamburguesa */
+  }
+  .dark-theme .menu-toggle {
+    color: #f4f5f1;
+  }
 }
