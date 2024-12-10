@@ -91,3 +91,18 @@
 .website-link:hover{
     color: #a08b84;
 }
+.list-skills-hor{
+    display: flex;
+}
+.list-skills-hor ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+.skill-ad{
+    background-color: #a08b84;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
