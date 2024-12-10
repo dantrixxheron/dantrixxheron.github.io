@@ -146,3 +146,87 @@
     color: #f1f2ee;
     transition: all 0.3s ease;
 }
+
+/* ------------------------------- Media Queries ------------------------------- */
+/* Media Query para Tablets (768px a 1024px) */
+@media (max-width: 1024px) {
+    .exp-main-info {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: flex-start; /* Alinea todo a la izquierda */
+        gap: 10px;
+        padding: 5px 10px;
+    }
+
+    .exp-main-info .exp-title,
+    .exp-main-info .exp-date {
+        font-size: 1.3em; /* Ajusta tamaño de fuente */
+    }
+
+    .exp-btn-show {
+        position: static; /* Elimina posición absoluta */
+        margin-top: 5px;
+        align-self: flex-end; /* Alinea el botón a la derecha */
+    }
+
+    .general-info {
+        flex-direction: column; /* Coloca en columna */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .list-skills-hor ul {
+        flex-wrap: wrap; /* Permite que las habilidades hagan wrap */
+        justify-content: flex-start;
+    }
+
+    .skill-ad {
+        font-size: 0.85em; /* Ajusta tamaño de texto */
+    }
+}
+
+/* Media Query para Móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .exp-dynamic-card {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 0 10px; /* Añade márgenes laterales */
+    }
+
+    .exp-main-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .exp-main-info .exp-title {
+        font-size: 1.2em; /* Reduce tamaño de fuente */
+    }
+
+    .exp-main-info .exp-date {
+        font-size: 1em;
+    }
+
+    .exp-btn-show {
+        position: static;
+        margin-top: 5px;
+    }
+
+    .dynamic-info {
+        padding: 8px; /* Reduce padding */
+    }
+
+    .location-text,
+    .website-link {
+        font-size: 0.9em; /* Ajusta tamaño de texto */
+    }
+
+    .list-skills-hor ul {
+        flex-direction: column; /* Habilidades en columna */
+        gap: 5px;
+    }
+
+    .skill-ad {
+        padding: 5px 8px; /* Ajusta el padding */
+        font-size: 0.8em; /* Reduce el tamaño del texto */
+    }
+}
