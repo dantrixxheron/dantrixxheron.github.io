@@ -1,46 +1,49 @@
 .cards-section {
-  display:flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* Importante: hace que todas las tarjetas tengan la misma altura base */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0 80px;
 }
+
 .project-card {
-  display: block; /* Asegura que el enlace se comporte como un bloque */
+  transition: all 0.3s ease;
+  display: block;
   background-color: #f8f5f0;
   color: #434343;
-  position: relative;
-  height: 100%;
   overflow: hidden;
   width: fit-content;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
   font-size: 16px;
-  text-decoration: none; /* Mantiene esto para quitar subrayado */
-  max-width: 400px;
+  text-decoration: none;
+  align-self: start;
 }
 
 .project-card:hover {
-  transform: scale(1.02); /* Pequeño efecto de aumento al pasar el ratón */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra ligeramente más pronunciada */
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
 
-.card-header, .card-body {
-  padding: 0 10px;
+.card-header{
+  transition: all 0.3s ease;
+  padding: 5px 15px;
 }
+.project-text {
+  padding: 0 15px;
+}
+
 .card-title {
   font-size: 1.2em;
   font-weight: bold;
   color: #333;
-  display: block; /* Asegura que ocupe todo el ancho */
+  display: block;
 }
 
 .card-subtitle {
   color: #666;
   font-size: 0.9em;
-  display: block; /* Asegura que ocupe todo el ancho */
+  display: block;
 }
 
 .card-img {
@@ -52,15 +55,21 @@
 .card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  object-fit: cover;
 }
+
+.resize-card {
+  grid-row: span 2;
+}
+
 .resize-card .card-img {
-  height: 650px; /* Altura más grande para capturas de pantalla de móvil */
-  overflow: hidden; /* Mantiene el recorte de la imagen */
+  height: 650px;
+  overflow: hidden;
 }
 
 .resize-card .card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Vuelve a cover para mantener el recorte */
+  object-fit: cover;
 }
+
