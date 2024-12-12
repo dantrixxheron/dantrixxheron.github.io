@@ -1,22 +1,66 @@
-/* Estilos por defecto (modo claro) */
+.cards-section {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Importante: hace que todas las tarjetas tengan la misma altura base */
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 .project-card {
+  display: block; /* Asegura que el enlace se comporte como un bloque */
   background-color: #f8f5f0;
   color: #434343;
-}
-
-.project-card .card-body {
   position: relative;
   height: 100%;
   overflow: hidden;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  font-size: 16px;
+  text-decoration: none; /* Mantiene esto para quitar subrayado */
+  max-width: 400px;
 }
 
-/* Estilo de la imagen: para controlar qué parte de la imagen se muestra */
-.image-container {
-  width: 100%;
-  height: 200px; /* Ajusta la altura según lo que necesites */
-  overflow: hidden; /* Oculta la parte de la imagen que no cabe */
+.project-card:hover {
+  transform: scale(1.02); /* Pequeño efecto de aumento al pasar el ratón */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra ligeramente más pronunciada */
 }
-.resize {
-  object-fit: cover;
-  object-position: bottom; /* Aquí puedes cambiar a 'top', 'bottom' o 'center' */
+
+.card-header, .card-body {
+  padding: 0 10px;
+}
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  display: block; /* Asegura que ocupe todo el ancho */
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 0.9em;
+  display: block; /* Asegura que ocupe todo el ancho */
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+.resize-card .card-img {
+  height: 650px; /* Altura más grande para capturas de pantalla de móvil */
+  overflow: hidden; /* Mantiene el recorte de la imagen */
+}
+
+.resize-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Vuelve a cover para mantener el recorte */
 }
