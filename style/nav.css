@@ -9,6 +9,7 @@
   font-family: "DM Mono", serif;
   position: relative; /* Asegura que no se "flote" sobre otros elementos */
   z-index: 2; /* Para que esté sobre el nav */
+  width: fit-content;
 }
 
 /* Estilos del Nav */
