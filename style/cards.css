@@ -73,3 +73,14 @@
   object-fit: cover;
 }
 
+/* ------------------------------- dark theme ------------------------------- */
+body.dark-theme .project-card {
+  background-color: #332f30;
+  color: #f1f2ee;
+}
+body.dark-theme .card-title {
+  color: #e6e6e6;
+}
+body.dark-theme .card-subtitle {
+  color: #bcaea9;
+}
