@@ -1,0 +1,72 @@
+/* --------------------------------- General -------------------------------- */
+#contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #433e3f;
+}
+
+/* --------------------------------- LABELS --------------------------------- */
+#contact-info .form-label {
+  font-size: 0.95rem;
+  color: #433e3f;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* --------------------------- INPUTS Y TEXTAREAS --------------------------- */
+#contact-info .form-control {
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  border: none;
+  border: 1px solid #6a6264;
+  background-color: transparent;
+  color: #433e3f;
+  transition: border-color 0.3s ease;
+}
+
+#contact-info .form-control:focus {
+  border-bottom: 1px solid #433e3f;
+  outline: none;
+}
+
+/* ------------------------------ BOTÓN ENVIAR ------------------------------ */
+#contact-info .btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #433e3f;
+  color: #433e3f;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#contact-info .btn-primary:hover {
+  background-color: #433e3f;
+  color: #f1f2ee;
+  cursor: pointer;
+}
+
+/**** ------------------------------- MODO OSCURO ------------------------------ ****/
+body.dark-theme #contact-info {
+  color: #f1f2ee;
+}
+
+body.dark-theme #contact-info .form-label,
+body.dark-theme #contact-info .form-control {
+  color: #f1f2ee;
+  border-bottom: 1px solid #ccc;
+}
+
+body.dark-theme #contact-info .btn-primary {
+  border-color: #f1f2ee;
+  color: #f1f2ee;
+}
+
+body.dark-theme #contact-info .btn-primary:hover {
+  background-color: #f1f2ee;
+  color: #433e3f;
+}

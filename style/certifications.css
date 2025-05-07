@@ -1,0 +1,70 @@
+#certifications {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f1f2ee;
+  color: #433e3f;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+#certifications table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 600px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#certifications th,
+#certifications td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d1d1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#certifications th {
+  background-color: #d3c5c5;
+  color: #433e3f;
+}
+
+#certifications tr:nth-child(even) {
+  background-color: #e9e2e2;
+}
+
+#certifications a {
+  color: #433e3f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#certifications a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/**** ------------------------------- Modo oscuro ------------------------------ ****/
+body.dark-theme #certifications {
+  background-color: #433e3f;
+  color: #f1f2ee;
+}
+
+body.dark-theme #certifications table {
+  color: #f1f2ee;
+}
+
+body.dark-theme #certifications th {
+  color: #f1f2ee;
+  background-color: #6a6264;
+}
+
+body.dark-theme #certifications tr:nth-child(even) {
+  background-color: #50494b;
+}
+
+body.dark-theme #certifications a {
+  color: #f1f2ee;
+}

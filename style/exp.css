@@ -1,232 +1,232 @@
-.exp-dynamic-card{
-    max-width: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+.exp-dynamic-card {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
-.exp-bar{
-    background-color: #d3c5c5;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.exp-bar {
+  background-color: #d3c5c5;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.exp-main-info{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.exp-main-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.exp-main-info .exp-title{
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #433e3f;
+.exp-main-info .exp-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #433e3f;
 }
-.exp-main-info .exp-date{
-    font-size: 1.2em;
-    color: #433e3f;
+.exp-main-info .exp-date {
+  font-size: 1.2em;
+  color: #433e3f;
 }
-.exp-btn-show{
-    position: absolute;
-    right: 25px;
-    top: 5px;
+.exp-btn-show {
+  position: absolute;
+  right: 25px;
+  top: 5px;
 }
-.exp-btn-show button{
-    border: 1px solid #d3c5c5;
-    border-radius: 20px;
-    padding: 5px 10px;
-    background-color: #d3c5c5;
-    color: #433e3f;
-    transition: all 0.3s ease;
+.exp-btn-show button {
+  border: 1px solid #d3c5c5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #d3c5c5;
+  color: #433e3f;
+  transition: all 0.3s ease;
 }
-.exp-btn-show button:hover{
-    border: 1px solid #433e3f;
+.exp-btn-show button:hover {
+  border: 1px solid #433e3f;
 }
 
 .dynamic-info {
-    max-height: 0; /* Oculta el contenido */
-    overflow: hidden; /* Evita que el contenido sobresalga */
-    opacity: 0; /* Inicia como transparente */
-    padding: 0 10px; /* Ajusta el padding al expandirse */
-    background-color: #f8f5f0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 10px;
+  background-color: #f8f5f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .dynamic-info.show {
-    max-height: fit-content; /* Define la altura máxima expandida */
-    opacity: 1; /* Hace visible el contenido */
-    padding: 10px; /* Padding completo */
-    transition: all 0.3s ease;
+  max-height: fit-content;
+  opacity: 1;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
-.general-info{
-    display: flex;
-    justify-content:flex-start;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 10px;
+.general-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.location{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.location {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
-.location-text{
-    font-size: 1em;
-    color: #433e3f;
+.location-text {
+  font-size: 1em;
+  color: #433e3f;
 }
-.ic-sm{
-    scale: 0.9;
-    color: #433e3f;
+.ic-sm {
+  scale: 0.9;
+  color: #433e3f;
 }
-.website-link{
-    font-size: 1em;
-    color: #433e3f;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.website-link {
+  font-size: 1em;
+  color: #433e3f;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.website-link:hover{
-    color: #a08b84;
+.website-link:hover {
+  color: #a08b84;
 }
-.list-skills-hor{
-    display: flex;
+.list-skills-hor {
+  display: flex;
 }
-.list-skills-hor ul{
-    display: flex;
-    gap: 5px;
-    list-style: none;
+.list-skills-hor ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
 }
-.skill-ad{
-    background-color: #a08b84;
-    color: #f1f2ee;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.9em;
+.skill-ad {
+  background-color: #7d6962;
+  color: #f1f2ee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
 }
 
 /* ------------------------------- Dark Theme ------------------------------- */
-.dark-theme .exp-bar{
-    background-color: #6a6264;
-    box-shadow: 0 0 10px rgba(130, 130, 130, 0.206);
-    transition: all 0.3s ease;
+.dark-theme .exp-bar {
+  background-color: #6a6264;
+  box-shadow: 0 0 10px rgba(130, 130, 130, 0.206);
+  transition: all 0.3s ease;
 }
-.dark-theme .exp-title, 
+.dark-theme .exp-title,
 .dark-theme .exp-date {
-    color: #f1f2ee;
-    transition: all 0.3s ease;
+  color: #f1f2ee;
+  transition: all 0.3s ease;
 }
-.dark-theme .exp-btn-show button{
-    background-color: #6a6264;
-    color: #f1f2ee;
-    border: 1px solid #6a6264;
-    transition: all 0.3s ease;
+.dark-theme .exp-btn-show button {
+  background-color: #6a6264;
+  color: #f1f2ee;
+  border: 1px solid #6a6264;
+  transition: all 0.3s ease;
 }
-.dark-theme .exp-btn-show button:hover{
-    border: 1px solid #f1f2ee;
+.dark-theme .exp-btn-show button:hover {
+  border: 1px solid #f1f2ee;
 }
-.dark-theme .dynamic-info{
-    background-color: #50494b;
-    box-shadow: 0 0 10px rgba(130, 130, 130, 0.119);
+.dark-theme .dynamic-info {
+  background-color: #50494b;
+  box-shadow: 0 0 10px rgba(130, 130, 130, 0.119);
 }
 .dark-theme .location-text,
 .dark-theme .ic-sm,
-.dark-theme .website-link{
-    color: #f1f2ee;
-    transition: all 0.3s ease;
+.dark-theme .website-link {
+  color: #f1f2ee;
+  transition: all 0.3s ease;
 }
-.dark-theme .website-link:hover{
-    color: #87756f;
+.dark-theme .website-link:hover {
+  color: #87756f;
 }
-.dark-theme .skill-ad{
-    background-color: #735f59;
-    color: #f1f2ee;
-    transition: all 0.3s ease;
+.dark-theme .skill-ad {
+  background-color: #735f59;
+  color: #f1f2ee;
+  transition: all 0.3s ease;
 }
 
 /* ------------------------------- Media Queries ------------------------------- */
 /* Media Query para Tablets (768px a 1024px) */
 @media (max-width: 1024px) {
-    .exp-main-info {
-        flex-direction: column; /* Coloca los elementos en columna */
-        align-items: flex-start; /* Alinea todo a la izquierda */
-        gap: 10px;
-        padding: 5px 10px;
-    }
+  .exp-main-info {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea todo a la izquierda */
+    gap: 10px;
+    padding: 5px 10px;
+  }
 
-    .exp-main-info .exp-title,
-    .exp-main-info .exp-date {
-        font-size: 1.3em; /* Ajusta tamaño de fuente */
-    }
+  .exp-main-info .exp-title,
+  .exp-main-info .exp-date {
+    font-size: 1.3em; /* Ajusta tamaño de fuente */
+  }
 
-    .exp-btn-show {
-        position: static; /* Elimina posición absoluta */
-        margin-top: 5px;
-        align-self: flex-end; /* Alinea el botón a la derecha */
-    }
+  .exp-btn-show {
+    position: static; /* Elimina posición absoluta */
+    margin-top: 5px;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+  }
 
-    .general-info {
-        flex-direction: column; /* Coloca en columna */
-        align-items: flex-start;
-        gap: 10px;
-    }
+  .general-info {
+    flex-direction: column; /* Coloca en columna */
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .list-skills-hor ul {
-        flex-wrap: wrap; /* Permite que las habilidades hagan wrap */
-        justify-content: flex-start;
-    }
+  .list-skills-hor ul {
+    flex-wrap: wrap; /* Permite que las habilidades hagan wrap */
+    justify-content: flex-start;
+  }
 
-    .skill-ad {
-        font-size: 0.85em; /* Ajusta tamaño de texto */
-    }
+  .skill-ad {
+    font-size: 0.85em; /* Ajusta tamaño de texto */
+  }
 }
 
 /* Media Query para Móviles (menos de 768px) */
 @media (max-width: 768px) {
-    .exp-dynamic-card {
-        max-width: 100%; /* Ocupa todo el ancho disponible */
-        margin: 0 10px; /* Añade márgenes laterales */
-    }
+  .exp-dynamic-card {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0 10px; /* Añade márgenes laterales */
+  }
 
-    .exp-main-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding: 10px;
-    }
+  .exp-main-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+  }
 
-    .exp-main-info .exp-title {
-        font-size: 1.2em; /* Reduce tamaño de fuente */
-    }
+  .exp-main-info .exp-title {
+    font-size: 1.2em; /* Reduce tamaño de fuente */
+  }
 
-    .exp-main-info .exp-date {
-        font-size: 1em;
-    }
+  .exp-main-info .exp-date {
+    font-size: 1em;
+  }
 
-    .exp-btn-show {
-        position: static;
-        margin-top: 5px;
-    }
+  .exp-btn-show {
+    position: static;
+    margin-top: 5px;
+  }
 
-    .dynamic-info {
-        padding: 8px; /* Reduce padding */
-    }
+  .dynamic-info {
+    padding: 8px; /* Reduce padding */
+  }
 
-    .location-text,
-    .website-link {
-        font-size: 0.9em; /* Ajusta tamaño de texto */
-    }
+  .location-text,
+  .website-link {
+    font-size: 0.9em; /* Ajusta tamaño de texto */
+  }
 
-    .list-skills-hor ul {
-        flex-direction: column; /* Habilidades en columna */
-        gap: 5px;
-    }
+  .list-skills-hor ul {
+    flex-direction: column; /* Habilidades en columna */
+    gap: 5px;
+  }
 
-    .skill-ad {
-        padding: 5px 8px; /* Ajusta el padding */
-        font-size: 0.8em; /* Reduce el tamaño del texto */
-    }
+  .skill-ad {
+    padding: 5px 8px; /* Ajusta el padding */
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+  }
 }

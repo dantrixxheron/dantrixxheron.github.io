@@ -39,6 +39,9 @@
   color: #333;
   display: block;
 }
+.card-title a{
+  color: #332f30;
+}
 
 .card-subtitle {
   color: #666;
@@ -80,6 +83,9 @@ body.dark-theme .project-card {
 }
 body.dark-theme .card-title {
   color: #e6e6e6;
+}
+body.dark-theme .card-title a{
+  color: #f8f5f0;
 }
 body.dark-theme .card-subtitle {
   color: #bcaea9;

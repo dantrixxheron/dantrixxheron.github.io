@@ -1,90 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode,location_on"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <script src="/scripts/main.js" defer></script>
-    <link rel="shortcut icon" href="/imgs/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/style/cards.css" />
-    <link rel="stylesheet" href="/style/scroll.css" />
-    <link rel="stylesheet" href="/style/nav.css" />
-    <link rel="stylesheet" href="/style/exp.css" />
-  </head>
 
-  <body>
-    <!-- Encabezado -->
-    <div id="home" class="header">
-      <h1>cm-daniela</h1>
-    </div>
-    <!-- Navegación -->
-    <nav>
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="bi bi-list"></i>
-      </button>
-      <ul class="nav-list">
-        <li><a href="#home" class="nav-link">Inicio</a></li>
-        <li><a href="#about-me" class="nav-link">Sobre mí</a></li>
-        <li><a href="#skills" class="nav-link">Habilidades</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#experience" class="nav-link">Experiencia</a></li>
-        <li><a href="#contact-info" class="nav-link">Contacto</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode,location_on" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="/scripts/main.js" defer></script>
+  <link rel="shortcut icon" href="/imgs/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/style/cards.css" />
+  <link rel="stylesheet" href="/style/scroll.css" />
+  <link rel="stylesheet" href="/style/nav.css" />
+  <link rel="stylesheet" href="/style/exp.css" />
+  <link rel="stylesheet" href="/style/form.css" />
+  <link rel="stylesheet" href="/style/certifications.css" />
+</head>
 
-    <!-- Sección inicio-->
+<body>
+  <!-- Encabezado -->
+  <div id="home" class="header" aria-label="c m daniela">
+    <span class="h1-nav">cm-daniela</span>
+  </div>
+  <!-- Navegación -->
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Mostrar/ocultar navegación">
+      <i class="bi bi-list"></i>
+    </button>
+    <ul class="nav-list">
+      <li><a href="#home" class="nav-link">Inicio</a></li>
+      <li><a href="#about-me" class="nav-link">Sobre mí</a></li>
+      <li><a href="#skills" class="nav-link">Habilidades</a></li>
+      <li><a href="#projects" class="nav-link">Proyectos</a></li>
+      <li><a href="#experience" class="nav-link">Experiencia</a></li>
+      <li><a href="#certifications" class="nav-link">Cursos</a></li>
+      <li><a href="#contact-info" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección inicio-->
+  <section>
     <div class="hero-section">
       <div class="name-section">
         <header class="text-center">
           <h1>Daniela Cruz Mejía</h1>
-          <p>Ingeniera de Software</p>
+          <p>Ingeniera de <span lang="en">Software</span></p>
         </header>
       </div>
     </div>
-    <!-- Botón flotante para cambiar el tema -->
-    <button
-      class="btn btn-light position-fixed top-0 end-0 m-3"
-      onclick="toggleTheme()"
-    >
-      <span id="theme-toggle" class="material-symbols-outlined">
-        dark_mode
-      </span>
-    </button>
-    <!-- Sección: Sobre Mí -->
-    <section id="about-me" class="container mt-5 about-section">
+  </section>
+  <!-- Botón flotante para cambiar el tema -->
+  <button class="btn btn-light position-fixed top-0 end-0 m-3" onclick="toggleTheme()" aria-label="Modo claro/obscuro">
+    <span id="theme-toggle" class="material-symbols-outlined">
+      dark_mode
+    </span>
+  </button>
+  <!-- Sección: Sobre Mí -->
+  <main class="container mt-5">
+    <section id="about-me" aria-label="Acerca de mí" class="container mt-5 about-section">
       <div class="card-p">
         <h2 class="section-title">Sobre mí</h2>
         <p>
-          Soy estudiante de Ingeniería y perteneciente al programa de Microsoft
-          Learn Student Ambassador, apasionada por la innovación y el impacto
-          social de la tecnología. A través de talleres y actividades, busco
-          crear espacios para que más mujeres jóvenes se integren al área
-          tecnológica, combinando creatividad, aprendizaje y trabajo en equipo.
+          Soy estudiante de Ingeniería y perteneciente al programa de
+          <span lang="en">Microsoft Learn Student Ambassador</span>, apasionada por la innovación y
+          el impacto social de la tecnología. A través de talleres y
+          actividades, busco crear espacios para que más mujeres jóvenes se
+          integren al área tecnológica, combinando creatividad, aprendizaje y
+          trabajo en equipo.
         </p>
       </div>
     </section>
     <!-- Sección: Habilidades -->
-    <section id="skills" class="container mt-5 skills-section">
+    <section id="skills" aria-label="Habilidades principales" class="container mt-5 skills-section">
       <div class="card-p">
         <div class="row">
           <!-- Título centrado en una fila completa -->
@@ -98,16 +94,16 @@
           <div class="col-md-4 mb-4 d-flex align-items-stretch">
             <div class="card custom h-100" style="width: 100%">
               <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
+                <h3 class="card-title" lang="en">Web Development</h3>
                 <p class="card-text">
-                  Experiencia con múltiples frameworks, lenguajes de desarrollo
-                  web, móvil, híbridas y multiplataforma.
+                  Experiencia con múltiples frameworks, lenguajes de
+                  desarrollo web, móvil, híbridas y multiplataforma.
                 </p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">React</li>
+                <li class="list-group-item" lang="en">React</li>
                 <li class="list-group-item">HTML, CSS y JS Nativo</li>
-                <li class="list-group-item">.NET</li>
+                <li class="list-group-item" lang="en">.NET</li>
               </ul>
             </div>
           </div>
@@ -115,7 +111,7 @@
           <div class="col-md-4 mb-4 d-flex align-items-stretch">
             <div class="card custom h-100" style="width: 100%">
               <div class="card-body">
-                <h5 class="card-title">Mobile Development</h5>
+                <h3 class="card-title" lang="en">Mobile Development</h3>
                 <p class="card-text">
                   Experiencia en desarrollo de aplicaciones móviles nativas,
                   híbridas y multiplataforma.
@@ -124,7 +120,7 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Kotlin</li>
                 <li class="list-group-item">React</li>
-                <li class="list-group-item">Ionic</li>
+                <li class="list-group-item" lang="en">Ionic</li>
               </ul>
             </div>
           </div>
@@ -132,16 +128,17 @@
           <div class="col-md-4 mb-4 d-flex align-items-stretch">
             <div class="card custom h-100" style="width: 100%">
               <div class="card-body">
-                <h5 class="card-title">Teaching</h5>
+                <h3 class="card-title" lang="en">Teaching</h3>
                 <p class="card-text">
-                  Experiencia en mentorías y talleres, enfocados en la inclusión
-                  de mujeres jóvenes en el ámbito tecnológico y STEM.
+                  Experiencia en mentorías y talleres, enfocados en la
+                  inclusión de mujeres jóvenes en el ámbito tecnológico y
+                  STEM.
                 </p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Coaching</li>
-                <li class="list-group-item">Lidership</li>
-                <li class="list-group-item">Management</li>
+                <li class="list-group-item" lang="en">Coaching</li>
+                <li class="list-group-item" lang="en">Lidership</li>
+                <li class="list-group-item" lang="en">Management</li>
               </ul>
             </div>
           </div>
@@ -149,203 +146,150 @@
       </div>
     </section>
     <!-- Sección: Proyectos -->
-    <section id="projects">
+    <section id="projects" aria-label="Proyectos">
       <div class="text-center mb-4">
         <h2 class="section-title">Proyectos</h2>
       </div>
       <div class="cards-section">
-        <a
-          href="https://github.com/dantrixxheron/GestureGameHCI"
-          class="project-card"
-          target="_blank"
-        >
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/gamegest-Preview.png"
-              alt="Preview de Proyecto de Juego utilizando interfaz gestual con GODOT y PYTHON"
-            />
+            <img src="./imgs/previews/gamegest-Preview.png" alt="Captura de pantalla del juego con interfaz gestual" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> Juego con interfaz gestual </span>
-            <span class="card-subtitle">Game & HCI Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/GestureGameHCI" target="_blank" rel="noopener">
+                Juego con interfaz gestual
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Game & HCI Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
               Juego en 2D usando el Motor de Videojuegos GODOT, utilizando el
-              entrenamiento de una inteligencia artificial para la detección de
-              gestos para controlar al personaje principal.
+              entrenamiento de una inteligencia artificial para la detección
+              de gestos para controlar al personaje principal.
             </p>
           </div>
-        </a>
-        <a
-        href="https://github.com/dantrixxheron/EFD-Game"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="card-img">
-          <img
-            src="./imgs/previews/efd-Preview.png"
-            alt="Preview de videojuego de aventura con GODOT y GDScript"
-          />
-        </div>
-        <div class="card-header">
-          <span class="card-title"> Escape From Derinkuyu </span>
-          <span class="card-subtitle">Game Development</span>
-        </div>
-        <div class="card-body">
-          <p class="project-text">
-            Videojuego de aventura en 2D con GODOT 4.2 y GDScript, con mecánicas
-            de plataformas y desarrollado como un proyecto de desarrollo de Software. 
-          </p>
-        </div>
-      </a>
-        <a
-          href="https://github.com/dantrixxheron/Gestor-de-gastos-personales"
-          class="project-card resize-card"
-          target="_blank"
-        >
+        </article>
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/GP-Preview.png"
-              alt="Preview de Proyecto de aplicación movil de Gestión de gastos con IONIC y ANGULAR"
-            />
+            <img src="./imgs/previews/efd-Preview.png" alt="Vista previa del videojuego Escape From Derinkuyu" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> Gestor de gastos "MeAhorro" </span>
-            <span class="card-subtitle">Mobile Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/EFD-Game" target="_blank" rel="noopener" lang="en">
+                Escape From Derinkuyu
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Game Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
-              Aplicación móvil en Ionic para la gestión de gastos, ingresos,
-              presupuestos, gráficas de gastos con almacenamiento local.
+              Videojuego de aventura en 2D con GODOT 4.2 y <span lang="en">GDScript</span>, con
+              mecánicas de plataformas y desarrollado como un proyecto de
+              desarrollo de <span lang="en">software</span>.
             </p>
           </div>
-        </a>
-        <a
-          href="https://github.com/dantrixxheron/NewTomarFoto"
-          class="project-card resize-card"
-          target="_blank"
-        >
+        </article>
+
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/Preview PicturesCRUD.jpeg"
-              alt="Preview de Proyecto de aplicación movil de Gestión de gastos con IONIC y ANGULAR"
-            />
+            <img src="./imgs/previews/zoonet-Preview.png" alt="Vista previa del proyecto Zoo.Net" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> CRUD Fotos con Localstorage </span>
-            <span class="card-subtitle">Mobile Development</span>
-          </div>
-          <div class="card-body">
-            <p class="project-text">
-              Aplicación móvil en Android Studio con Kotlin para la gestión de
-              fotos, con funcionalidades de CRUD y almacenamiento local.
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://github.com/dantrixxheron/ZOO.NET"
-          class="project-card"
-          target="_blank"
-        >
-          <div class="card-img">
-            <img
-              src="./imgs/previews/zoonet-Preview.png"
-              alt="Preview de Proyecto de blog informativo sobre algunas especies comunes en un Zoológico"
-            />
-          </div>
-          <div class="card-header">
-            <span class="card-title"> Zoo.Net </span>
-            <span class="card-subtitle">Web Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/ZOO.NET" target="_blank" rel="noopener" lang="en">
+                Zoo.Net
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Web Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
               Proyecto personal con HTML, CSS y JS que consiste en la creación
-              de un blog informativo sobre distintas especies
+              de un blog informativo sobre distintas especies.
             </p>
           </div>
-        </a>
-        <a
-          href="https://github.com/dantrixxheron/proyecto-bd"
-          class="project-card"
-          target="_blank"
-        >
+        </article>
+
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/SGBD-Preview.png"
-              alt="Preview de Proyecto Gestor de Bases de Datos con REACT TS, NODE EXPRESS"
-            />
+            <img src="./imgs/previews/SGBD-Preview.png" alt="Vista previa del gestor de base de datos en React" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> Gestor de Base de datos </span>
-            <span class="card-subtitle">Frontend Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" rel="noopener">
+                Gestor de Base de datos
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Frontend Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
               Aplicación web en React para la gestión de bases de datos, con
-              funcionalidades de CRUD y autenticación de usuarios.
+              funcionalidades de <span lang="en">CRUD</span> y autenticación de usuarios.
             </p>
           </div>
-        </a>
-        <a
-          href="https://github.com/dantrixxheron/bus-booking"
-          class="project-card"
-          target="_blank"
-        >
+        </article>
+
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/busbook-Preview.png"
-              alt="Preview de Proyecto de reservación de boletos de autobús con Javascript y HTML"
-            />
+            <img src="./imgs/previews/busbook-Preview.png" alt="Vista previa del sistema de reservación de boletos" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> Reservación de boletos </span>
-            <span class="card-subtitle">Web Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/bus-booking" target="_blank" rel="noopener">
+                Reservación de boletos
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Web Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
               Página web con HTML, CSS y JS para la reservación de boletos,
-              aplicando los conocimientos de DOM y eventos.
+              aplicando conocimientos de manipulación del DOM y manejo de
+              eventos.
             </p>
           </div>
-        </a>
-        <a
-          href="https://github.com/dantrixxheron/portafolioBootstrapCMD"
-          class="project-card"
-          target="_blank"
-        >
+        </article>
+
+        <article class="project-card">
           <div class="card-img">
-            <img
-              src="./imgs/previews/portafoliobtsrp-Preview.png"
-              alt="Preview de Proyecto de portafolio personal con Bootstrap, HTML y CSS"
-            />
+            <img src="./imgs/previews/portafoliobtsrp-Preview.png"
+              alt="Vista previa del portafolio desarrollado con Bootstrap" />
           </div>
-          <div class="card-header">
-            <span class="card-title"> Portafolio con Bootstrap </span>
-            <span class="card-subtitle">Web Development</span>
-          </div>
+          <header class="card-header">
+            <h3 class="card-title">
+              <a href="https://github.com/dantrixxheron/portafolioBootstrapCMD" target="_blank" rel="noopener">
+                Portafolio con <span lang="en">Bootstrap </span>
+              </a>
+            </h3>
+            <span class="card-subtitle" lang="en">Web Development</span>
+          </header>
           <div class="card-body">
             <p class="project-text">
-              Página web con HTML, CSS y JS con la adpatación de Bootstrap, proyecto que es la adaptación de un repositorio de GitHub, aplicando conocimientos de diseño responsivo.
+              Página web con HTML, CSS y JS usando <span lang="en">Bootstrap</span>. Proyecto
+              adaptado desde un repositorio de <span lang="en">GitHub</span>, enfocado en diseño
+              responsivo.
             </p>
           </div>
-        </a>
+        </article>
       </div>
     </section>
     <!-- Sección: Experiencia -->
-    <section id="experience" class="container mt-5 skills-section">
+    <section id="experience" aria-label="Experiencia profesional" class="container mt-5 skills-section">
       <h2 class="section-title center">Experiencia</h2>
       <div class="exp-dynamic-card">
         <div class="exp-bar">
           <div class="exp-main-info">
             <div class="exp-title">
-              <span>Student Ambassador @ Microsoft</span>
+              <span lang="en">Student Ambassador @ Microsoft</span>
             </div>
             <div class="exp-date">
               <span>2023 - Actualidad</span>
             </div>
             <div class="exp-btn-show">
-              <button onclick="changeIconExp(event)">
+              <button onclick="changeIconExp(event)" aria-label="Ver más información sobre el puesto">
                 <i class="bi bi-plus-lg"></i>
               </button>
             </div>
@@ -354,17 +298,15 @@
         <div class="dynamic-info">
           <div class="general-info">
             <div class="location">
-              <span class="material-symbols-outlined ic-sm"> location_on </span>
-              <span class="location-text">Remote</span>
+              <span class="material-symbols-outlined ic-sm">
+                location_on
+              </span>
+              <span class="location-text" lang="en">Remote</span>
             </div>
             <div class="website">
               <i class="bi bi-arrow-up-right ic-sm"></i>
-              <a
-                href="https://mvp.microsoft.com/en-US/studentambassadors"
-                class="website-link"
-                target="_blank"
-              >
-                <span>mvp.microsoft.com/studentambassadors</span>
+              <a href="https://mvp.microsoft.com/en-US/studentambassadors" class="website-link" target="_blank">
+                <span>Página de <span lang="en"> Microsoft Learn Student Ambassadors</span></span>
               </a>
             </div>
           </div>
@@ -377,10 +319,10 @@
             </p>
             <div class="list-skills-hor">
               <ul>
-                <li class="skill-ad">Microsoft Azure</li>
-                <li class="skill-ad">Microsoft Access</li>
-                <li class="skill-ad">VSCode</li>
-                <li class="skill-ad">Github</li>
+                <li class="skill-ad" lang="en">Microsoft Azure</li>
+                <li class="skill-ad" lang="en">Microsoft Access</li>
+                <li class="skill-ad" lang="en">VSCode</li>
+                <li class="skill-ad" lang="en">Github</li>
               </ul>
             </div>
           </div>
@@ -396,7 +338,7 @@
               <span>2024 - Actualidad</span>
             </div>
             <div class="exp-btn-show">
-              <button onclick="changeIconExp(event)">
+              <button onclick="changeIconExp(event)" aria-label="Más información sobre el puesto">
                 <i class="bi bi-plus-lg"></i>
               </button>
             </div>
@@ -405,25 +347,23 @@
         <div class="dynamic-info">
           <div class="general-info">
             <div class="location">
-              <span class="material-symbols-outlined ic-sm"> location_on </span>
+              <span class="material-symbols-outlined ic-sm">
+                location_on
+              </span>
               <span class="location-text">Universidad de Colima</span>
             </div>
             <div class="website">
               <i class="bi bi-arrow-up-right ic-sm"></i>
-              <a
-                href="https://instagram.com/proyecto.ada/"
-                class="website-link"
-                target="_blank"
-              >
-                <span>instagram.com/proyecto.ada</span>
+              <a href="https://instagram.com/proyecto.ada/" class="website-link" target="_blank">
+                <span>Instagram de Proyecto Ada</span>
               </a>
             </div>
           </div>
           <div class="exp-content">
             <p>
-              Liderando un proyecto de inclusión de mujeres jóvenes en el ámbito
-              tecnológico y STEM, a través de talleres, mentorías y actividades
-              de aprendizaje.
+              Liderando un proyecto de inclusión de mujeres jóvenes en el
+              ámbito tecnológico y STEM, a través de talleres, mentorías y
+              actividades de aprendizaje.
             </p>
             <div class="list-skills-hor">
               <ul>
@@ -437,57 +377,128 @@
         </div>
       </div>
     </section>
-    <!-- Sección contacto -->
-    <section id="contact-info">
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold section-title">Contacto</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="mb-4 info">
-            Si deseas contactarme para cualquier asunto, no dudes en escribirme
-            en cualquiera de mis redes sociales.
-          </p>
-          <!-- Barra de íconos de redes sociales -->
-          <div class="d-flex justify-content-center">
-            <a
-              href="https://www.linkedin.com/in/cm-daniela/"
-              target="_blank"
-              class="text-decoration-none mb-2 mx-3"
-            >
-              <i class="bi bi-linkedin icons"></i>
-            </a>
-            <a
-              href="https://github.com/dantrixxheron"
-              target="_blank"
-              class="text-decoration-none mb-2 mx-3"
-            >
-              <i class="bi bi-github icons"></i>
-            </a>
-            <a
-              href="mailto:dantrixxheron.bn@gmail.com"
-              target="_blank"
-              class="text-decoration-none mb-2 mx-3"
-            >
-              <i class="bi bi-envelope-fill icons"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/dantrixxheron"
-              target="_blank"
-              class="text-decoration-none mb-2 mx-3"
-            >
-              <i class="bi bi-instagram icons"></i>
-            </a>
-          </div>
-        </div>
+    <!-- Sección de certificaciones / cursos -->
+    <section id="certifications" class="my-5">
+      <h2 class="section-title center">Certificaciones y Cursos</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Certificado / Curso</th>
+              <th>Institución</th>
+              <th>Periodo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Master Frontend asistido con IA.</td>
+              <td>DEVF.</td>
+              <td>2024 - Actualidad.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://coursera.org/verify/NMCDLJQC3FYW" target="_blank">
+                  Fundamentos de análisis de datos.
+                </a>
+              </td>
+              <td>Google (Coursera)</td>
+              <td>2024 - 2025.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://bit.ly/4jyQLTM" target="_blank">
+                  Mujeres líderes y su poder de decisión.
+                </a>
+              </td>
+              <td>Universidad de Insurgentes.</td>
+              <td>2024.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://bit.ly/3GaEGFW" target="_blank">
+                  Gestión de Proyectos Ágiles y Enfoques Lean.
+                </a>
+              </td>
+              <td>Fundación Telefónica Movistar.</td>
+              <td>Junio 2024.</td>
+            </tr>
+            <tr>
+              <td>Introducción a las Tecnologías Emergentes.</td>
+              <td lang="en"> <span lang="en">Emtech</span> & Santander <span lang="en">Open Academy</span>.</td>
+              <td>2024.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://bit.ly/43Cw5U1" target="_blank">
+                  Desarrollo Frontend.
+                </a>
+              </td>
+              <td>Tecnolochicas.</td>
+              <td>2023.</td>
+            </tr>
+            <tr>
+              <td lang="en">
+                <a href="https://bit.ly/44JpYgq" target="_blank">
+                  Design Thinking.
+                </a>
+              </td>
+              <td>Fundación Telefónica Movistar.</td>
+              <td>2023.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
-    <!-- Pie de página -->
-    <footer class="footer text-center">
-      <p>
-        &copy; 2024 Daniela Cruz Mejía | Ingeniera de Software | Microsoft Learn
-        Student Ambassador
-      </p>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Sección de contacto (formulario) -->
+    <section id="contact-info" aria-label="Formulario de contacto" class="mt-5">
+      <h2 class="section-title center">Contactáme</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+    <!-- Redes sociales -->
+    <section id="rrss" aria-label="Redes sociales de contacto" class="my-5">
+      <div class="d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/cm-daniela/" aria-label="LinkedIn" target="_blank"
+          class="text-decoration-none mb-2 mx-3">
+          <i class="bi bi-linkedin icons"></i>
+        </a>
+        <a href="https://github.com/dantrixxheron" target="_blank" aria-label="GitHub"
+          class="text-decoration-none mb-2 mx-3">
+          <i class="bi bi-github icons"></i>
+        </a>
+        <a href="mailto:dantrixxheron.bn@gmail.com" target="_blank" aria-label="Correo"
+          class="text-decoration-none mb-2 mx-3">
+          <i class="bi bi-envelope-fill icons"></i>
+        </a>
+        <a href="https://www.instagram.com/dantrixxheron" target="_blank" aria-label="Instagram"
+          class="text-decoration-none mb-2 mx-3">
+          <i class="bi bi-instagram icons"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Pie de página -->
+  <footer class="footer text-center">
+    <p>
+      &copy; 2024 Daniela Cruz Mejía | Ingeniera de Software | Microsoft Learn
+      Student Ambassador
+    </p>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -3,12 +3,13 @@
   font-size: 16;
 }
 
-.header h1 {
+.header .h1-nav {
   margin: 0;
   font-size: 1.2rem;
+  font-weight: bold;
   font-family: "DM Mono", serif;
-  position: relative; /* Asegura que no se "flote" sobre otros elementos */
-  z-index: 2; /* Para que esté sobre el nav */
+  position: relative;
+  z-index: 2;
   width: fit-content;
 }
 

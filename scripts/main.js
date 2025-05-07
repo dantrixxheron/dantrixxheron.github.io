@@ -49,5 +49,25 @@ function changeIconExp(event) {
 function toggleMenu() {
     const navList = document.querySelector('.nav-list');
     navList.classList.toggle('open');
-  }
-  
+}
+
+document.querySelector("#contact-info form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el envío por defecto
+
+    const name = document.querySelector("#name").value.trim();
+    const email = document.querySelector("#email").value.trim();
+    const message = document.querySelector("#message").value.trim();
+
+    // Reemplaza por tu correo real
+    const destinatario = "dantrixxheron.bn@gmail.com";
+
+    const asunto = encodeURIComponent("Hagamos contacto desde la web");
+    const cuerpo = encodeURIComponent(
+        `Hola soy ${name} mucho gusto!\n
+        \n${message}
+        \n\nMi correo es ${email}.\n
+        \nEspero tu respuesta!`
+    );
+
+    window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+});
