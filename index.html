@@ -224,7 +224,8 @@
           </header>
           <div class="card-body">
             <p class="project-text">
-              Aplicación móvil en <span lang="en">Android Studio</span> con Kotlin para la gestión de fotos, con funcionalidades de CRUD y
+              Aplicación móvil en <span lang="en">Android Studio</span> con Kotlin para la gestión de fotos, con
+              funcionalidades de CRUD y
               almacenamiento local.
             </p>
           </div>
@@ -292,8 +293,7 @@
 
         <article class="project-card">
           <div class="card-img">
-            <img src="./imgs/previews/portafoliobtsrp-Preview.png"
-              alt="" />
+            <img src="./imgs/previews/portafoliobtsrp-Preview.png" alt="" />
           </div>
           <header class="card-header">
             <h3 class="card-title">
@@ -320,19 +320,20 @@
         <div class="exp-bar">
           <div class="exp-main-info">
             <div class="exp-title">
-              <span lang="en">Student Ambassador @ Microsoft</span>
+              <span lang="en" id="exp1">Student Ambassador @ Microsoft</span>
             </div>
             <div class="exp-date">
               <span>2023 - Actualidad</span>
             </div>
             <div class="exp-btn-show">
-              <button onclick="changeIconExp(event)" aria-label="Ver más información sobre el puesto">
+              <button onclick="changeIconExp(event)" aria-label="Ver más información sobre el puesto" id="btnExp1"
+                aria-labelledby="btnExp1 exp1" aria-expanded="false" aria-controls="exp1Content">
                 <i class="bi bi-plus-lg"></i>
               </button>
             </div>
           </div>
         </div>
-        <div class="dynamic-info">
+        <div class="dynamic-info" id="exp1Content" hidden>
           <div class="general-info">
             <div class="location">
               <span class="material-symbols-outlined ic-sm">
@@ -369,19 +370,20 @@
         <div class="exp-bar">
           <div class="exp-main-info">
             <div class="exp-title">
-              <span>Fundadora @ Proyecto Ada</span>
+              <span id="exp2">Fundadora @ Proyecto Ada</span>
             </div>
             <div class="exp-date">
               <span>2024 - Actualidad</span>
             </div>
             <div class="exp-btn-show">
-              <button onclick="changeIconExp(event)" aria-label="Más información sobre el puesto">
-                <i class="bi bi-plus-lg"></i>
+              <button onclick="changeIconExp(event)" id="btnExp2" aria-label="Más información sobre el puesto"
+                aria-labelledby="btnExp2 exp2" aria-expanded="false" aria-controls="exp2Content">
+                <i class="bi bi-plus-lg"></i>SSS
               </button>
             </div>
           </div>
         </div>
-        <div class="dynamic-info">
+        <div class="dynamic-info" id="exp2Content" hidden>
           <div class="general-info">
             <div class="location">
               <span class="material-symbols-outlined ic-sm">

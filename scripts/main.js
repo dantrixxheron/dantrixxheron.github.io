@@ -35,7 +35,9 @@ function changeIconExp(event) {
     } else {
         icon.classList.replace("bi-dash-lg", "bi-plus-lg");
     }
-
+    // Cambiar el estado de aria-expanded
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!isExpanded));
     // Encontrar el contenedor padre más cercano (exp-dynamic-card)
     const card = button.closest(".exp-dynamic-card");
 
@@ -44,6 +46,12 @@ function changeIconExp(event) {
 
     // Alternar la clase "show" para aplicar la transición
     dynamicInfo.classList.toggle("show");
+    // Alternar atributo hidden para accesibilidad
+    if (dynamicInfo.hasAttribute("hidden")) {
+        dynamicInfo.removeAttribute("hidden");
+    } else {
+        dynamicInfo.setAttribute("hidden", "");
+    }
 }
 
 function toggleMenu() {
